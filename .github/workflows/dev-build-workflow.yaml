@@ -41,13 +41,13 @@ jobs:
         name: Unit Test Results
         path: '${{ github.workspace }}/coverage/lcov-report/*'
 
-    analyze:
-      name: SAST CodeQL
-      runs-on: ubuntu-latest
-      permissions:
-        actions: read
-        contents: read
-        security-events: write
+  analyze:
+    name: SAST CodeQL
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
 
     strategy:
       fail-fast: false
