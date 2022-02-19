@@ -38,5 +38,5 @@ env:
       - name: Upload Reports
         uses: actions/upload-artifact@v2
         with:
-        name: Unit Test Results
-        path: '${{ github.workspace }}/coverage/lcov-report/*'
+          name: Unit Test Results
+          path: '${{ github.workspace }}/coverage/lcov-report/*'
